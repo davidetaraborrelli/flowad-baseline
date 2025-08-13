@@ -1,0 +1,25 @@
+random_seed: 42
+data:
+  csv_path: data/raw/sample_flows.csv  # Replace with real dataset CSV path
+  label_col: Label
+  positive_label: ATTACK
+  negative_label: BENIGN
+  test_size: 0.3
+  stratify: true
+  max_rows: 20000           # Limit rows for quick runs; set null to use all rows
+features:
+  drop_cols: [Timestamp]    # Columns to drop if present
+  categorical: [Protocol]   # Will be one-hot encoded if present
+models:
+  supervised: [logreg, rf]
+  unsupervised: [ocsvm, iforest]
+training:
+  n_jobs: 1 # increase if you want
+plots:
+  save: true
+  dir: results/plots
+output:
+  metrics_json: results/metrics.json
+  roc_curve_png: results/plots/roc_curve.png
+  pr_curve_png: results/plots/pr_curve.png
+  thresholds_json: results/thresholds.json

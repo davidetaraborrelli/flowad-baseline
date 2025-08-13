@@ -1,0 +1,18 @@
+{
+  "supervised_logreg": {
+    "roc_auc": 0.9849228611500702,
+    "pr_auc": 0.9539545573858116
+  },
+  "supervised_rf": {
+    "roc_auc": 0.978880405783041,
+    "pr_auc": 0.9333817930494007
+  },
+  "unsupervised_ocsvm": {
+    "roc_auc": 0.9483122251631885,
+    "pr_auc": 0.8871419823342803
+  },
+  "unsupervised_iforest": {
+    "roc_auc": 0.883245104345717,
+    "pr_auc": 0.6323186712537985
+  }
+}

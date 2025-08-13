@@ -10,14 +10,15 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data / results
-data/
-results/
-
 # IDE
 .vscode/
 .idea/
 
-# RESULTS
+# Data
+data/
+
+# Results: ignore everything, unignore selected artifacts
+results/*
+!results/plots/
 !results/plots/*.png
 !results/*.json

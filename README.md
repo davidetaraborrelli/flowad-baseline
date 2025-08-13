@@ -30,13 +30,16 @@ python src/train.py --config configs/default.yaml
 - README
 - ROC/PR plots and a metrics/thresholds JSON
 
-### Results (demo)
+## Results (demo)
 | Model                | ROC-AUC | PR-AUC | FPR @ TPR=0.9 |
 |----------------------|--------:|-------:|--------------:|
 | Logistic Regression  |  0.98   |  0.95  |      0.04     |
 | Random Forest        |  0.98   |  0.93  |      0.06     |
 | One-Class SVM        |  0.51   |  0.22  |      0.98     |
 | Isolation Forest     |  0.88   |  0.63  |      0.26     |
+
+![ROC curve](results/plots/roc_curve.png)
+![PR curve](results/plots/pr_curve.png)
 
 
 ## Project structure
@@ -60,6 +63,6 @@ repo/
 ```
 
 ## License
-MIT
+MIT - See `LICENSE`
 
 

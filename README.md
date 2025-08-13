@@ -1,5 +1,8 @@
 # FlowAD-Baseline
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 A tiny, clean **baseline for anomaly / attack detection on network flows** with Python and scikit-learn.
 It trains classic models (Logistic Regression, Random Forest, One-Class SVM, Isolation Forest) and
 produces **ROC/PR curves**, **FPR @ fixed TPR**, and a reproducible `metrics.json`.
